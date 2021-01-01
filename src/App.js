@@ -11,8 +11,8 @@ function App() {
       <Banner />
       <Row
         title="NEFLIX ORIGINAL"
-        fetchUrl={request.fetchNetflixOriginal}
-        isLargeRow={true}
+        fetchUrl={request.fetchTrending}
+        isLargeRow
       />
       <Row title="Trending now" fetchUrl={request.fetchTrending} />
       <Row title="Top Rated" fetchUrl={request.fetchTopRted} />
