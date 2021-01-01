@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import request from "./request";
+import './Banner.css'
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -32,7 +33,7 @@ function Banner() {
       <div className="banner__contents">
         {/** Background image */}
         {/* title */}
-        <h1>{movie?.name || movie?.title || movie?.original_name}</h1>
+        <h1 className="banner__title">{movie?.name || movie?.title || movie?.original_name}</h1>
         <div className="banner__buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
